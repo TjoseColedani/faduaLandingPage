@@ -1,0 +1,34 @@
+.cardsContainer {
+  width: 85vw;
+    background-color: #111;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .titleContainer {
+    margin-bottom: 20px;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+  }
+  
+  /* Personalización del scrollbar */
+  .carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .carousel::-webkit-scrollbar-track {
+    background: #222;
+  }
+  

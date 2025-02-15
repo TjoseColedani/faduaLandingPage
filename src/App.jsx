@@ -1,18 +1,19 @@
 import './App.css'
+import Footer from './components/Footer/Footer';
+import Navbar from './components/NavBar/NavBar';
+import Home from './views/Home/Home';
 
 function App() {
 
 
   return (
-    <>
+    <div>
+      <Navbar />
       <div>
-        <h1>FADUA Landing Page</h1>
-        <p>This is a test of Vite and React</p>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <Home />
       </div>
-    </>
+      <Footer />
+    </div>
   )
 }
 

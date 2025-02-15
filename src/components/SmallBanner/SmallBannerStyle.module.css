@@ -1,0 +1,36 @@
+.smallBanner {
+    width: 85vw;  
+    height: 400px;  
+    background-color: gray;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    background-color: #aaa; /* Color para simular la imagen */
+    position: relative;
+  }
+  
+  .imagePlaceholder button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .imagePlaceholder button:hover {
+    background-color: #cc0000;
+  }
+  

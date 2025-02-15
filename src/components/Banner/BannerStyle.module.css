@@ -1,0 +1,8 @@
+.Banner-container {
+    width: 100vw;
+    height: 250px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,11 @@
+.imagesCarrusel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+  }
+  
+  .imagesCarrusel::-webkit-scrollbar {
+    display: none;
+  }
+  
