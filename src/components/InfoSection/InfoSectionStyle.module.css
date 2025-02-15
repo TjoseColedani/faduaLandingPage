@@ -1,8 +1,10 @@
 .container {
-    background-color: black;
-    padding: 2rem;
-    color: white;
-  }
+  background-color: black;
+  padding: 2rem;
+  color: white;
+  width: 85vw; /* Hace que ocupe el 85% del ancho de la pantalla */
+}
+
   
   .sections {
     display: flex;

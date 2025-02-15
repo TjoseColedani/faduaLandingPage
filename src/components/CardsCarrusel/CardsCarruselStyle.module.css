@@ -1,6 +1,6 @@
 .cardsContainer {
   width: 85vw;
-    background-color: #111;
+    background-color: #ffffff;
     padding: 40px 20px;
     color: white;
     text-align: center;
@@ -9,6 +9,11 @@
   .titleContainer {
     margin-bottom: 20px;
   }
+
+  .titleContainer h2 {
+    color: black;
+  }
+  
   
   .carousel {
     display: flex;

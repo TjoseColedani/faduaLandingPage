@@ -32,7 +32,7 @@ function ContactForm() {
       </div>
       <form onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
-          <label htmlFor="nombreApellido" className={styles.label}>Nombre y Apellido</label>
+          <label htmlFor="nombreApellido" className={styles.label}></label>
           <input
             type="text"
             id="nombreApellido"
@@ -45,7 +45,7 @@ function ContactForm() {
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="email" className={styles.label}>Email</label>
+          <label htmlFor="email" className={styles.label}></label>
           <input
             type="email"
             id="email"
@@ -58,7 +58,7 @@ function ContactForm() {
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="telefono" className={styles.label}>Teléfono</label>
+          <label htmlFor="telefono" className={styles.label}></label>
           <input
             type="tel"
             id="telefono"
@@ -71,7 +71,7 @@ function ContactForm() {
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="sucursal" className={styles.label}>Sucursal</label>
+          <label htmlFor="sucursal" className={styles.label}></label>
           <input
             type="text"
             id="sucursal"
@@ -84,7 +84,7 @@ function ContactForm() {
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="consulta" className={styles.label}>Consulta</label>
+          <label htmlFor="consulta" className={styles.label}></label>
           <textarea
             id="consulta"
             name="consulta"
