@@ -8,10 +8,12 @@
   
   .titleContainer {
     margin-bottom: 20px;
+    text-align: left;
   }
 
   .titleContainer h2 {
     color: black;
+    font-size: larger
   }
   
   
@@ -21,19 +23,5 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     padding-bottom: 20px;
-  }
-  
-  /* Personalización del scrollbar */
-  .carousel::-webkit-scrollbar {
-    height: 8px;
-  }
-  
-  .carousel::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-  }
-  
-  .carousel::-webkit-scrollbar-track {
-    background: #222;
   }
   

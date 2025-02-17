@@ -7,11 +7,13 @@ function CarCards() {
       id: 1,
       title: "Fastback",
       models: ["Fastback", "Fastback Abarth"],
+      image: "/assets/FASTBACK.jpg"
     },
     {
       id: 2,
       title: "Mobi",
       models: ["Mobi"],
+      image: "/assets/MOBI.jpg"
     },
     {
       id: 3,
@@ -23,11 +25,13 @@ function CarCards() {
         "Drive 1.3 CVT",
         "Precision 1.3 CVT",
       ],
+      image: "/assets/CRONOS.jpg"
     },
     {
       id: 4,
       title: "Toro",
       models: ["Freedom", "Volcano Nafta", "Volcano Diesel", "Ultra"],
+      image: "/assets/TORO.jpg"
     },
   ];
 
@@ -36,7 +40,8 @@ function CarCards() {
       {cars.map((car) => (
         <div key={car.id} className={style.card}>
           <h3>{car.title}</h3>
-          <div className={style.imagePlaceholder}></div>
+          {/* Aquí se muestra la imagen del auto */}
+          <img src={car.image} alt={car.title} className={style.image} />
           <details>
             <summary>Ver versiones</summary>
             <ul>

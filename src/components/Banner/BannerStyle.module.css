@@ -1,8 +1,14 @@
 .Banner-container {
+    margin-top: 40px;
     width: 100vw;
     height: 250px;
     background-color: rgb(249, 116, 7);
+    background-image: url('../../assets/ENAMORATE.jpg'); /* Ruta relativa */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+

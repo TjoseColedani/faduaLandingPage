@@ -1,11 +1,46 @@
 .imagesCarrusel {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 20px;
-  }
-  
-  .imagesCarrusel::-webkit-scrollbar {
-    display: none;
-  }
-  
+  padding: 20px;
+  width: 88%;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Espacio entre el h3 y las imágenes */
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap; /* Las imágenes se organizarán en filas */
+  gap: 20px; /* Reducir el espacio entre las imágenes */
+  justify-content: space-between; /* Distribuye las imágenes con espacio entre ellas */
+  align-items: flex-start; /* Asegura que las imágenes estén alineadas arriba */
+}
+
+.imagesCarrusel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  text-align: center;
+  width: 30%; /* Mantener las imágenes al 30% del contenedor */
+}
+
+.image {
+  width: 100%; /* Ajusta el tamaño de la imagen */
+  height: auto;
+}
+
+.imageTitle {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.imageDescription {
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+}

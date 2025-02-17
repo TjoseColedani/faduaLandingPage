@@ -9,7 +9,11 @@ function CardsCarrusel() {
         <h2>ENCONTRÁ TU FIAT 0KM</h2>
       </div>
       <div className={style.carousel}>
-        <CarCards />
+        <div className={style.carouselContent}>
+          <div className={style.carruselItem}>
+              <CarCards />
+          </div>
+        </div>
       </div>
     </div>
   );
