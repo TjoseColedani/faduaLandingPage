@@ -1,27 +1,40 @@
 .cardsContainer {
   width: 85vw;
-    background-color: #ffffff;
-    padding: 40px 20px;
-    color: white;
-    text-align: center;
-  }
-  
-  .titleContainer {
-    margin-bottom: 20px;
-    text-align: left;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.titleContainer {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.titleContainer h2 {
+  color: black;
+  font-size: larger;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    width: 100vw; /* Full width for smaller screens */
+    padding: 30px 10px; /* Reduced padding */
   }
 
   .titleContainer h2 {
-    color: black;
-    font-size: larger
+    font-size: 1.5rem; /* Slightly smaller font size */
   }
-  
-  
+
   .carousel {
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding-bottom: 20px;
+    padding-bottom: 15px; /* Less padding on smaller screens */
   }
-  
+}

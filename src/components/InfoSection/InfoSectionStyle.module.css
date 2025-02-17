@@ -63,3 +63,40 @@ h4 {
   font-weight: bold; /* Negrita */
   font-size: 1.4rem; /* Aumentamos el tamaño de la fuente */
 }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .sections {
+    flex-direction: column; /* En pantallas medianas, las secciones se apilan verticalmente */
+    align-items: center;
+  }
+
+  .section {
+    width: 80%; /* Las secciones ocuparán el 80% del ancho en pantallas más pequeñas */
+    margin-bottom: 1rem; /* Agregamos espacio entre las secciones */
+  }
+
+  h3 {
+    font-size: 24px; /* Reducimos el tamaño del título */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* La sección ocupará el 100% del ancho en pantallas más pequeñas */
+    padding: 1rem; /* Reducimos el padding */
+  }
+
+  .iconContainer {
+    width: 60px;
+    height: 60px; /* Iconos más pequeños en pantallas móviles */
+  }
+
+  h3 {
+    font-size: 20px; /* Ajustamos el tamaño del título para pantallas móviles */
+  }
+
+  .button {
+    padding: 0.5rem 0.8rem; /* Reducimos el tamaño del botón en pantallas móviles */
+  }
+}

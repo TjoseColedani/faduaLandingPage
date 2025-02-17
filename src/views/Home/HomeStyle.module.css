@@ -9,3 +9,10 @@
   text-align: center;
   padding: 20px;
 }
+
+@media (max-width: 768px) {
+  .homeContainer {
+    padding: 15px; /* Reducción de padding en pantallas pequeñas */
+    gap: 20px;     /* Menor espacio entre los elementos */
+  }
+}

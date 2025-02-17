@@ -28,3 +28,26 @@
   max-width: calc(25% - 1.5rem); /* Limita el ancho máximo de los elementos */
   min-width: 250px; /* Asegura que no se deformen, incluso en pantallas pequeñas */
 }
+
+/* Haciendo responsive */
+@media (max-width: 1024px) {
+  .cardsContainer > * {
+    flex: 1 1 calc(50% - 1.5rem); /* Dos elementos por fila en pantallas más pequeñas */
+    max-width: calc(50% - 1.5rem); /* Limita el ancho máximo a la mitad */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Ajusta el contenedor al 95% en pantallas pequeñas */
+  }
+
+  .header {
+    font-size: 1.25rem; /* Ajusta el tamaño del título */
+  }
+
+  .cardsContainer > * {
+    flex: 1 1 100%; /* Hace que los elementos ocupen todo el ancho disponible en pantallas móviles */
+    max-width: 100%; /* Los elementos se estiran completamente */
+  }
+}

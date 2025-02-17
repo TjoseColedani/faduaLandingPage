@@ -34,3 +34,41 @@ h2 {
   font-size: 2rem;
   color: grey; 
 }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .container {
+    width: 90vw; /* Hacemos el ancho un poco más grande en pantallas medianas */
+    padding: 1.5rem; /* Reducimos el padding */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Ajustamos el tamaño del título */
+  }
+
+  .socialMediaIcon {
+    width: 45px;
+    height: 45px; /* Iconos más pequeños en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* La sección ocupará el 100% del ancho en pantallas pequeñas */
+    padding: 1rem; /* Reducimos el padding */
+  }
+
+  .socialMediaContainer {
+    flex-direction: column; /* Los íconos de las redes sociales se apilarán verticalmente */
+    gap: 0.5rem; /* Reducimos el espacio entre los íconos */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Reducimos el tamaño del título */
+  }
+
+  .socialMediaIcon {
+    width: 40px;
+    height: 40px; /* Íconos aún más pequeños en pantallas móviles */
+  }
+}

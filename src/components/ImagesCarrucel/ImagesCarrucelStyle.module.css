@@ -44,3 +44,19 @@
   font-size: 14px;
   color: #555;
 }
+
+@media (max-width: 1024px) {
+  .card {
+    width: 45%; /* Ajustar el tamaño de las tarjetas a la mitad del contenedor */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Ajustar las tarjetas a todo el ancho del contenedor */
+  }
+
+  .title {
+    font-size: 18px; /* Reducir el tamaño del título */
+  }
+}

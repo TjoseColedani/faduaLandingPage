@@ -56,3 +56,31 @@ li {
   text-align: left;
   margin-left: 10px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
+    gap: 30px; /* Reducir espacio entre las tarjetas */
+  }
+
+  .card {
+    width: 100%; /* Hacer que las tarjetas ocupen todo el ancho disponible */
+    padding: 10px; /* Reducir el padding */
+  }
+
+  h3 {
+    font-size: 1rem; /* Reducir el tamaño de fuente */
+  }
+
+  .image {
+    height: 120px; /* Reducir la altura de las imágenes */
+  }
+
+  summary {
+    font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+  }
+
+  li {
+    font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+  }
+}

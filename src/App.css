@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Ajuste para pantallas pequeñas */
+  }
 }

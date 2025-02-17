@@ -35,3 +35,16 @@
 .imagePlaceholder button:hover {
   background-color: #cc0000;
 }
+
+@media (max-width: 768px) {
+  .smallBanner {
+    height: 300px; /* Reducir altura para pantallas más pequeñas */
+  }
+
+  .imagePlaceholder button {
+    padding: 8px 16px; /* Reducir padding del botón */
+    font-size: 0.9rem; /* Reducir tamaño de la fuente */
+    bottom: 8px; /* Ajustar la posición del botón */
+    left: 8px; /* Ajustar la posición del botón */
+  }
+}

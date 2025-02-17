@@ -28,5 +28,20 @@
   background-color: aquamarine;
   border-radius: 50%;
   padding: 10px 10px;
-  color: white; /* Asegura que el texto dentro de este div sea blanco */
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 50px;  /* Menor altura para pantallas pequeñas */
+    padding: 0 15px; /* Reducción de padding */
+  }
+
+  .logo-placeholder h1 {
+    font-size: 18px; /* Ajuste de tamaño de fuente */
+  }
+
+  .logo-whatsapp h2 {
+    padding: 8px 8px; /* Ajuste del tamaño del círculo */
+  }
 }

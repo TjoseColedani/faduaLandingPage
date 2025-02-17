@@ -14,6 +14,7 @@
 .formRow {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap; /* Asegura que los inputs se ajusten en pantallas pequeñas */
 }
 
 .input,
@@ -67,4 +68,31 @@
   font-size: 28px;
   text-align: center;
   margin-bottom: 1rem;
+}
+
+/* Haciendo responsive */
+@media (max-width: 1024px) {
+  .formContainer {
+    width: 95%; /* Ajusta el contenedor a un 95% en pantallas más pequeñas */
+  }
+
+  .formRow {
+    flex-direction: column; /* Los inputs se apilan en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .headerText h3 {
+    font-size: 24px; /* Ajusta el tamaño del título */
+  }
+
+  .input,
+  .textarea {
+    font-size: 0.9rem; /* Reducir el tamaño de la fuente en inputs */
+  }
+
+  .submitButton {
+    padding: 0.6rem 1.2rem; /* Ajusta el padding del botón */
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente del botón */
+  }
 }

@@ -1,30 +1,16 @@
-
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import styles from './OpinionsStyle.module.css';
 import OpinionCard from '../OpinionCards/OpinionCard';
 
 function Opinions() {
-  const opinions = [
-    {
-      name: 'Juan Pérez',
-      comment: 'Excelente servicio, muy atentos y rápidos en resolver cualquier duda.',
-      rating: 5,
-    },
-    {
-      name: 'Ana García',
-      comment: 'Me encantó el trato, muy recomendables.',
-      rating: 4,
-    },
-    {
-      name: 'Carlos Rodríguez',
-      comment: 'Buen servicio, aunque el tiempo de espera fue un poco largo.',
-      rating: 3,
-    },
-    {
-      name: 'Luisa Fernández',
-      comment: 'Un lugar muy confiable, siempre cumplen lo que prometen.',
-      rating: 5,
-    },
-  ];
+  const [opinions, setOpinions] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/opinions')  // Asegurate de que el backend esté corriendo
+      .then(response => setOpinions(response.data))
+      .catch(error => console.error('Error fetching opinions:', error));
+  }, []);
 
   return (
     <div className={styles.container}>
